@@ -176,54 +176,70 @@ a {
 
 .hero-characters {
     z-index: 3;
+    position: absolute;
     bottom: 0;
+    right: 0;
     top: auto;
+    left: auto;
+    width: 55%;
     height: auto;
 }
 
 .hero-characters img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     height: auto;
     object-fit: contain;
-    object-position: bottom center;
+    object-position: bottom right;
 }
 
 .hero-caution-tape {
     z-index: 4;
+    position: absolute;
     bottom: 0;
-    top: auto;
+    left: 0;
+    width: 100%;
     height: auto;
 }
 
 .hero-caution-tape img {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
+    position: relative;
     width: 100%;
     height: auto;
-    object-fit: contain;
-    object-position: bottom center;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: bottom left;
 }
 
 .hero-content {
     position: absolute;
     z-index: 5;
-    top: 15%;
-    left: 60px;
-    max-width: 500px;
+    top: 20%;
+    left: 80px;
+    max-width: 450px;
 }
 
 .hero-title {
     font-family: var(--font-display);
-    font-size: clamp(36px, 6vw, 72px);
+    font-size: clamp(40px, 5vw, 64px);
     font-weight: 900;
-    line-height: 1.1;
+    line-height: 1.15;
     color: var(--color-white);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.btn-subscribe {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 14px 28px;
+}
+
+.btn-subscribe .btn-icon {
+    width: 28px;
+    height: 28px;
+    filter: invert(83%) sepia(64%) saturate(1000%) hue-rotate(359deg) brightness(103%) contrast(106%);
 }
 
 /* ===== Sections ===== */
