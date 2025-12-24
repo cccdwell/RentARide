@@ -177,13 +177,13 @@ a {
 .hero-characters {
     z-index: 3;
     position: absolute;
-    bottom: 0;
-    right: -5%;
+    bottom: -10%;
+    right: -10%;
     top: auto;
     left: auto;
-    width: 45%;
-    height: 70%;
-    max-height: 600px;
+    width: 60%;
+    height: 85%;
+    overflow: hidden;
 }
 
 .hero-characters img {
@@ -191,27 +191,30 @@ a {
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: bottom right;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transform: scale(0.9);
+    transform-origin: bottom right;
 }
 
 .hero-caution-tape {
     z-index: 4;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: -5%;
+    left: -10%;
+    width: 80%;
     height: auto;
+    transform: rotate(-8deg);
+    transform-origin: bottom left;
 }
 
 .hero-caution-tape img {
     position: relative;
     width: 100%;
     height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    object-position: bottom left;
+    object-fit: contain;
 }
 
 .hero-content {
@@ -237,12 +240,12 @@ a {
     background-color: var(--color-black);
     color: var(--color-white);
     padding: 14px 28px;
+    font-weight: 600;
 }
 
 .btn-subscribe .btn-icon {
-    width: 28px;
-    height: 28px;
-    filter: invert(83%) sepia(64%) saturate(1000%) hue-rotate(359deg) brightness(103%) contrast(106%);
+    width: 24px;
+    height: 24px;
 }
 
 /* ===== Sections ===== */
