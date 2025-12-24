@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects
+# Add any custom redirects here
+
+# Example: redirect www to non-www
+# https://www.rentaride.pages.dev/* https://rentaride.pages.dev/:splat 301
